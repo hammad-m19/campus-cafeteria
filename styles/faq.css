@@ -1,0 +1,224 @@
+@import url('global.css');
+
+/* ===== 10. PAGE: FAQ (faq.html) ===== */
+
+.faq-hero {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  padding: var(--space-3xl) var(--space-xl);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.faq-hero h1 {
+  color: var(--color-white);
+  animation: fadeUp 0.6s var(--ease-out) both;
+}
+
+.faq-hero p {
+  opacity: 0.9;
+  font-size: var(--fs-md);
+  animation: fadeUp 0.6s var(--ease-out) 0.15s both;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* Accordion */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.faq-item {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(43, 27, 23, 0.05);
+  overflow: hidden;
+  transition: box-shadow var(--transition-fast);
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.faq-item[open] {
+  box-shadow: var(--shadow-md);
+  border-color: rgba(255, 107, 53, 0.2);
+}
+
+.faq-item summary {
+  padding: var(--space-lg) var(--space-xl);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-base);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  transition: color var(--transition-fast);
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.08);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item summary:hover {
+  color: var(--color-primary);
+}
+
+.faq-item-answer {
+  padding: 0 var(--space-xl) var(--space-xl);
+  color: var(--color-gray-600);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+  animation: faqOpen 0.3s var(--ease-out) both;
+}
+
+/* Sidebar cards */
+.faq-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.faq-hours-card,
+.faq-location-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(43, 27, 23, 0.05);
+}
+
+.faq-hours-card h3,
+.faq-location-card h3 {
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.faq-hours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.faq-hours-table tr {
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.faq-hours-table tr:last-child {
+  border-bottom: none;
+}
+
+.faq-hours-table td {
+  padding: var(--space-sm) 0;
+  font-size: var(--fs-sm);
+}
+
+.faq-hours-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--color-green);
+}
+
+/* CSS Map placeholder */
+.faq-map {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #e8f4f2, #d1e7dd);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--space-md);
+}
+
+.faq-map-pin {
+  font-size: 2.5rem;
+  animation: mapPinBounce 1.5s var(--ease-spring) infinite;
+  z-index: 2;
+}
+
+.faq-map-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--color-chocolate);
+  margin-top: var(--space-sm);
+  z-index: 2;
+}
+
+.faq-map::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(42, 157, 143, 0.1) 20px, rgba(42, 157, 143, 0.1) 21px),
+    repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(42, 157, 143, 0.1) 20px, rgba(42, 157, 143, 0.1) 21px);
+}
+
+.faq-map-roads {
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 768px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .faq-hours-card,
+  .faq-location-card {
+    flex: 1;
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-sidebar {
+    flex-direction: column;
+  }
+
+  .faq-item summary {
+    padding: var(--space-md) var(--space-lg);
+    font-size: var(--fs-sm);
+  }
+}
