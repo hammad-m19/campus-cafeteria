@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to order at Campus Bites - Step-by-step guide with peak hours, token system, and pick-up rules.">
+  <title>How to Order - Campus Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/order.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Campus Bites Home">
+        <span class="logo-icon" aria-hidden="true">&#127828;</span>
+        Campus Bites
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span>
+      </label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="deals.html" class="nav-link">Deals</a></li>
+          <li><a href="order.html" class="nav-link" aria-current="page">Order</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- Hero -->
+    <section class="order-hero" aria-label="Order page hero">
+      <div class="container">
+        <h1>&#128203; How to Order</h1>
+        <p>Four simple steps from craving to eating</p>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section" aria-label="Ordering steps">
+      <div class="container">
+        <h2 class="section-title scroll-reveal">Follow These Steps</h2>
+        <p class="section-subtitle scroll-reveal">Ordering at Campus Bites is quick and easy</p>
+
+        <div class="order-timeline">
+          <article class="order-step">
+            <span class="order-step-number" aria-label="Step 1">1</span>
+            <span class="order-step-emoji" aria-hidden="true">&#128221;</span>
+            <h3>Choose Your Items</h3>
+            <p>Browse the menu board above the counter or check our menu page. Pick your main, sides, and drinks. Our staff is happy to help with recommendations!</p>
+          </article>
+
+          <article class="order-step">
+            <span class="order-step-number" aria-label="Step 2">2</span>
+            <span class="order-step-emoji" aria-hidden="true">&#128179;</span>
+            <h3>Pay at the Counter</h3>
+            <p>Head to the billing counter and place your order. We accept cash, JazzCash, Easypaisa, and student card balance. Confirm your total and pay.</p>
+          </article>
+
+          <article class="order-step">
+            <span class="order-step-number" aria-label="Step 3">3</span>
+            <span class="order-step-emoji" aria-hidden="true">&#127915;</span>
+            <h3>Collect Your Token</h3>
+            <p>After payment, you will receive a numbered token slip. Keep it safe - your token number will be called when your food is ready.</p>
+          </article>
+
+          <article class="order-step">
+            <span class="order-step-number" aria-label="Step 4">4</span>
+            <span class="order-step-emoji" aria-hidden="true">&#127860;</span>
+            <h3>Pick Up Your Order</h3>
+            <p>Listen for your token number at the pick-up counter. Show your token, grab your tray, and enjoy your meal! Bon appetit!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guidelines -->
+    <section class="section" aria-label="Order guidelines">
+      <div class="container">
+        <h2 class="section-title scroll-reveal">Good to Know</h2>
+        <p class="section-subtitle scroll-reveal">Tips and guidelines for a smooth experience</p>
+
+        <div class="order-guidelines-grid">
+
+          <!-- Peak Hours Chart -->
+          <div class="order-guideline-card scroll-reveal">
+            <h3>&#128200; Peak Hours Guide</h3>
+            <p style="font-size: var(--fs-sm); color: var(--color-gray-500); margin-bottom: var(--space-lg);">Plan your visit to avoid the rush</p>
+
+            <div class="order-peak-chart">
+              <div class="order-peak-row">
+                <span class="order-peak-label">7:30 - 9:00 AM</span>
+                <div class="order-peak-bar order-peak-bar-medium" style="width: 50%;"></div>
+                <span class="order-peak-text">Moderate</span>
+              </div>
+              <div class="order-peak-row">
+                <span class="order-peak-label">9:00 - 11:00 AM</span>
+                <div class="order-peak-bar order-peak-bar-low" style="width: 25%;"></div>
+                <span class="order-peak-text">Quiet</span>
+              </div>
+              <div class="order-peak-row">
+                <span class="order-peak-label">11:00 - 1:00 PM</span>
+                <div class="order-peak-bar order-peak-bar-high" style="width: 95%;"></div>
+                <span class="order-peak-text">Very Busy</span>
+              </div>
+              <div class="order-peak-row">
+                <span class="order-peak-label">1:00 - 3:00 PM</span>
+                <div class="order-peak-bar order-peak-bar-high" style="width: 85%;"></div>
+                <span class="order-peak-text">Busy</span>
+              </div>
+              <div class="order-peak-row">
+                <span class="order-peak-label">3:00 - 5:00 PM</span>
+                <div class="order-peak-bar order-peak-bar-low" style="width: 30%;"></div>
+                <span class="order-peak-text">Quiet</span>
+              </div>
+              <div class="order-peak-row">
+                <span class="order-peak-label">5:00 - 7:00 PM</span>
+                <div class="order-peak-bar order-peak-bar-medium" style="width: 60%;"></div>
+                <span class="order-peak-text">Moderate</span>
+              </div>
+              <div class="order-peak-row">
+                <span class="order-peak-label">7:00 - 9:00 PM</span>
+                <div class="order-peak-bar order-peak-bar-medium" style="width: 45%;"></div>
+                <span class="order-peak-text">Moderate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pick-up Rules -->
+          <div class="order-guideline-card scroll-reveal">
+            <h3>&#128220; Pick-Up Rules</h3>
+            <p style="font-size: var(--fs-sm); color: var(--color-gray-500); margin-bottom: var(--space-lg);">A few things to keep in mind</p>
+
+            <ul class="order-rules-list">
+              <li>
+                <span class="order-rule-icon" aria-hidden="true">&#127915;</span>
+                <div><strong>Keep your token.</strong> You must present your token slip to collect your order. Lost tokens require manager verification.</div>
+              </li>
+              <li>
+                <span class="order-rule-icon" aria-hidden="true">&#9200;</span>
+                <div><strong>Average wait: 5-10 minutes.</strong> During peak hours (11 AM - 1 PM), orders may take up to 15 minutes.</div>
+              </li>
+              <li>
+                <span class="order-rule-icon" aria-hidden="true">&#128227;</span>
+                <div><strong>Listen for your number.</strong> Token numbers are called out loud and displayed on the screen above the pick-up counter.</div>
+              </li>
+              <li>
+                <span class="order-rule-icon" aria-hidden="true">&#128230;</span>
+                <div><strong>Takeaway available.</strong> Let the cashier know if you want your order packed for takeaway. No extra charge.</div>
+              </li>
+              <li>
+                <span class="order-rule-icon" aria-hidden="true">&#9989;</span>
+                <div><strong>Check your order.</strong> Please verify all items before leaving the counter. We are happy to fix any errors on the spot.</div>
+              </li>
+              <li>
+                <span class="order-rule-icon" aria-hidden="true">&#9854;</span>
+                <div><strong>Accessibility.</strong> Priority service is available for students with disabilities. Just inform the counter staff.</div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-label="Call to action">
+      <div class="container" style="text-align: center;">
+        <a href="menu.html" class="btn btn-primary">Browse the Menu &#127860;</a>
+        <a href="deals.html" class="btn btn-amber" style="margin-left: var(--space-md);">Check Today's Deals &#128293;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Campus Bites Home">
+            <span class="logo-icon" aria-hidden="true">&#127828;</span>
+            Campus Bites
+          </a>
+          <p>Serving the campus community with fresh, flavorful, and affordable meals since 2018.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="order.html">How to Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">More</h4>
+          <ul class="footer-links">
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li>&#128222; +92 321 1234567</li>
+            <li>&#128231; hello@campusbites.pk</li>
+            <li>&#128205; Block C, Science Building</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Campus Bites. All rights reserved.</span>
+        <span>Made with &#10084;&#65039; on campus</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
