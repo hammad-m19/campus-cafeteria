@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Bites Menu - Browse our breakfast, fast food, main course, beverages and desserts. All prices in PKR.">
+  <title>Menu - Campus Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/menu.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Campus Bites Home">
+        <span class="logo-icon" aria-hidden="true">&#127828;</span>
+        Campus Bites
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span>
+      </label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link" aria-current="page">Menu</a></li>
+          <li><a href="deals.html" class="nav-link">Deals</a></li>
+          <li><a href="order.html" class="nav-link">Order</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- Hero -->
+    <section class="menu-hero" aria-label="Menu page hero">
+      <div class="container">
+        <h1>&#128221; Our Menu</h1>
+        <p>Fresh picks for every craving, every budget</p>
+      </div>
+    </section>
+
+    <!-- Category Jump Bar -->
+    <nav class="menu-jump-bar" aria-label="Menu categories">
+      <a href="#breakfast" class="menu-jump-link">&#127859; Breakfast</a>
+      <a href="#fastfood" class="menu-jump-link">&#127828; Fast Food</a>
+      <a href="#maincourse" class="menu-jump-link">&#127858; Main Course</a>
+      <a href="#beverages" class="menu-jump-link">&#9749; Beverages &amp; Desserts</a>
+    </nav>
+
+    <!-- Breakfast -->
+    <section id="breakfast" class="section menu-category" aria-label="Breakfast menu">
+      <div class="container">
+        <div class="menu-category-header scroll-reveal">
+          <span class="menu-category-icon" aria-hidden="true">&#127859;</span>
+          <h2>Breakfast</h2>
+          <div class="menu-category-line"></div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal reveal-delay-1">
+            <span class="menu-card-emoji" aria-hidden="true">&#129370;</span>
+            <h3 class="menu-card-name">Paratha Roll</h3>
+            <p class="menu-card-desc">Flaky paratha stuffed with spiced egg, onion, and fresh chutney. A campus classic.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 180</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-best">&#11088; Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <span class="menu-card-emoji" aria-hidden="true">&#127859;</span>
+            <h3 class="menu-card-name">Halwa Puri</h3>
+            <p class="menu-card-desc">Traditional puri with suji halwa, spiced chickpeas, and achar. Pure comfort food.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 250</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-veg">&#127793; Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-3">
+            <span class="menu-card-emoji" aria-hidden="true">&#129480;</span>
+            <h3 class="menu-card-name">Anda Chapati</h3>
+            <p class="menu-card-desc">Two fluffy chapatis with scrambled egg masala. Simple, filling, and delicious.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 150</span>
+              <div class="menu-card-badges"></div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-4">
+            <span class="menu-card-emoji" aria-hidden="true">&#129374;</span>
+            <h3 class="menu-card-name">French Toast Platter</h3>
+            <p class="menu-card-desc">Golden French toast with honey drizzle, banana slices, and a dusting of cinnamon.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 280</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-new">&#10024; New</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fast Food -->
+    <section id="fastfood" class="section menu-category" aria-label="Fast food menu">
+      <div class="container">
+        <div class="menu-category-header scroll-reveal">
+          <span class="menu-category-icon" aria-hidden="true">&#127828;</span>
+          <h2>Fast Food</h2>
+          <div class="menu-category-line"></div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal reveal-delay-1">
+            <span class="menu-card-emoji" aria-hidden="true">&#127828;</span>
+            <h3 class="menu-card-name">Zinger Burger</h3>
+            <p class="menu-card-desc">Crispy fried chicken fillet, spicy mayo, fresh lettuce, and crunchy slaw in a toasted bun.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 450</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-spicy">&#127798; Spicy</span>
+                <span class="badge badge-best">&#11088; Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <span class="menu-card-emoji" aria-hidden="true">&#127839;</span>
+            <h3 class="menu-card-name">Loaded Fries</h3>
+            <p class="menu-card-desc">Crispy golden fries smothered in cheese sauce, jalapenos, and a garlic mayo drizzle.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 320</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-veg">&#127793; Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-3">
+            <span class="menu-card-emoji" aria-hidden="true">&#127829;</span>
+            <h3 class="menu-card-name">Chicken Pizza Slice</h3>
+            <p class="menu-card-desc">Generous slice topped with seasoned chicken, bell peppers, olives, and mozzarella.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 280</span>
+              <div class="menu-card-badges"></div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-4">
+            <span class="menu-card-emoji" aria-hidden="true">&#127790;</span>
+            <h3 class="menu-card-name">Chicken Shawarma</h3>
+            <p class="menu-card-desc">Marinated chicken, pickled turnip, garlic toum, and fresh veggies in a warm wrap.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 350</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-spicy">&#127798; Spicy</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Course -->
+    <section id="maincourse" class="section menu-category" aria-label="Main course menu">
+      <div class="container">
+        <div class="menu-category-header scroll-reveal">
+          <span class="menu-category-icon" aria-hidden="true">&#127858;</span>
+          <h2>Main Course</h2>
+          <div class="menu-category-line"></div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal reveal-delay-1">
+            <span class="menu-card-emoji" aria-hidden="true">&#127835;</span>
+            <h3 class="menu-card-name">Chicken Biryani</h3>
+            <p class="menu-card-desc">Fragrant basmati rice layered with tender chicken, aromatic spices, and fried onions. Served with raita.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 380</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-best">&#11088; Bestseller</span>
+                <span class="badge badge-spicy">&#127798; Spicy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <span class="menu-card-emoji" aria-hidden="true">&#127858;</span>
+            <h3 class="menu-card-name">Chicken Karahi</h3>
+            <p class="menu-card-desc">Wok-tossed chicken in a rich tomato and green chili sauce. Served with two naans.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 500</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-spicy">&#127798; Spicy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-3">
+            <span class="menu-card-emoji" aria-hidden="true">&#129367;</span>
+            <h3 class="menu-card-name">Daal Chawal</h3>
+            <p class="menu-card-desc">Creamy masoor daal with steamed rice, topped with tarka. A wholesome classic.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 220</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-veg">&#127793; Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-4">
+            <span class="menu-card-emoji" aria-hidden="true">&#127836;</span>
+            <h3 class="menu-card-name">Chicken Pasta</h3>
+            <p class="menu-card-desc">Penne in creamy white sauce with grilled chicken, mushrooms, and herbs. Comfort in a bowl.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 420</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-new">&#10024; New</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beverages and Desserts -->
+    <section id="beverages" class="section menu-category" aria-label="Beverages and desserts menu">
+      <div class="container">
+        <div class="menu-category-header scroll-reveal">
+          <span class="menu-category-icon" aria-hidden="true">&#9749;</span>
+          <h2>Beverages &amp; Desserts</h2>
+          <div class="menu-category-line"></div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal reveal-delay-1">
+            <span class="menu-card-emoji" aria-hidden="true">&#9749;</span>
+            <h3 class="menu-card-name">Doodh Patti Chai</h3>
+            <p class="menu-card-desc">Strong, milky Pakistani-style tea brewed to perfection. The ultimate study companion.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 80</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-best">&#11088; Bestseller</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <span class="menu-card-emoji" aria-hidden="true">&#129380;</span>
+            <h3 class="menu-card-name">Mango Lassi</h3>
+            <p class="menu-card-desc">Thick, creamy yogurt blended with sweet mango pulp. Cool, refreshing, and heavenly.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 200</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-veg">&#127793; Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-3">
+            <span class="menu-card-emoji" aria-hidden="true">&#127846;</span>
+            <h3 class="menu-card-name">Gulab Jamun</h3>
+            <p class="menu-card-desc">Golden fried dumplings soaked in rose-scented sugar syrup. Two pieces per serving.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 150</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-veg">&#127793; Vegetarian</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-4">
+            <span class="menu-card-emoji" aria-hidden="true">&#127864;</span>
+            <h3 class="menu-card-name">Fresh Juice</h3>
+            <p class="menu-card-desc">Freshly squeezed seasonal fruit juice. Choose from orange, pomegranate, or mixed fruit.</p>
+            <div class="menu-card-bottom">
+              <span class="menu-card-price">PKR 180</span>
+              <div class="menu-card-badges">
+                <span class="badge badge-new">&#10024; New</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Campus Bites Home">
+            <span class="logo-icon" aria-hidden="true">&#127828;</span>
+            Campus Bites
+          </a>
+          <p>Serving the campus community with fresh, flavorful, and affordable meals since 2018.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="order.html">How to Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">More</h4>
+          <ul class="footer-links">
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li>&#128222; +92 321 1234567</li>
+            <li>&#128231; hello@campusbites.pk</li>
+            <li>&#128205; Block C, Science Building</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Campus Bites. All rights reserved.</span>
+        <span>Made with &#10084;&#65039; on campus</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
