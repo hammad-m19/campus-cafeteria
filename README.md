@@ -2,21 +2,20 @@
 
 A warm, modern, and fully responsive website for **Campus Bites**, a fictional university cafeteria. Built with plain HTML5 and CSS3 only, featuring rich CSS animations, a glassmorphism-style header, and a mobile-first design.
 
-## Pages and Owners
+## Pages
 
-| # | Page | File | Stylesheet | Owner |
-|---|------|------|------------|-------|
-| 1 | Home | `src/index.html` | `styles/index.css` | **Team Lead** |
-| 2 | Menu | `src/menu.html` | `styles/menu.css` | Member 1 |
-| 3 | Daily Specials and Deals | `src/deals.html` | `styles/deals.css` | Member 2 |
-| 4 | How to Order | `src/order.html` | `styles/order.css` | Member 3 |
-| 5 | Feedback and Contact | `src/feedback.html` | `styles/feedback.css` | Member 4 |
-| 6 | About Us | `src/about.html` | `styles/about.css` | Member 5 |
-| 7 | Gallery | `src/gallery.html` | `styles/gallery.css` | Member 6 |
-| 8 | FAQ, Hours and Location | `src/faq.html` | `styles/faq.css` | Member 7 |
-| - | Shared Global Styles | - | `styles/global.css` | **Team Lead** |
+| # | Page | File | Stylesheet |
+|---|------|------|------------|
+| 1 | Home | `src/index.html` | `styles/style.css` |
+| 2 | Menu | `src/menu.html` | `styles/style.css` |
+| 3 | Daily Specials and Deals | `src/deals.html` | `styles/style.css` |
+| 4 | How to Order | `src/order.html` | `styles/style.css` |
+| 5 | Feedback and Contact | `src/feedback.html` | `styles/style.css` |
+| 6 | About Us | `src/about.html` | `styles/style.css` |
+| 7 | Gallery | `src/gallery.html` | `styles/style.css` |
+| 8 | FAQ, Hours and Location | `src/faq.html` | `styles/style.css` |
 
-Each page has its own dedicated `.css` file in `styles/`, and all pages share `styles/global.css` for layout, tokens, typography, and animations. The unified bundle is also maintained in `styles/style.css`.
+All pages share the unified stylesheet `styles/style.css` containing design tokens, layout, header/footer, animations, and page-specific styles.
 
 ## Folder Structure
 
@@ -47,15 +46,6 @@ campus-cafeteria/
     menu.html
     order.html
   styles/
-    about.css
-    deals.css
-    faq.css
-    feedback.css
-    gallery.css
-    global.css
-    index.css
-    menu.css
-    order.css
     style.css
 ```
 
@@ -71,17 +61,20 @@ Or right-click any HTML file and choose "Open with" your preferred browser.
 
 ## Stylesheet Organization
 
-Styles are modularized so each team member can work in their own file without merge conflicts:
+All styles are unified in `styles/style.css`, organized into clear sections:
 
-- `global.css`: Design tokens, CSS reset, header, navigation, footer, button styles, keyframes, and reduced motion.
-- `index.css`: Home hero, floating badges, steaming coffee cup, feature cards, and preview strip.
-- `menu.css`: Category jump bar, menu item cards, dietary badges, and price styling.
-- `deals.css`: Infinite marquee ticker, featured Daily Special, and combo cards with savings calculation.
-- `order.css`: Step-by-step ordering timeline, peak hours CSS bar chart, and pickup rules.
-- `feedback.css`: Floating-label inputs, star rating radio row, and contact cards.
-- `about.css`: Story section, vertical timeline, mission values, and kitchen team staff cards.
-- `gallery.css`: Filter chips, masonry grid, image zooming, and hover caption slide-up.
-- `faq.css`: Animated accordion items, weekly opening hours, and campus map.
+- Section 1: Design Tokens & CSS Reset
+- Section 2: Global Layout, Header, Navigation, Footer, Buttons
+- Section 3: Home Page (`index.html`)
+- Section 4: Menu Page (`menu.html`)
+- Section 5: Deals Page (`deals.html`)
+- Section 6: Order Page (`order.html`)
+- Section 7: Feedback Page (`feedback.html`)
+- Section 8: About Page (`about.html`)
+- Section 9: Gallery Page (`gallery.html`)
+- Section 10: FAQ Page (`faq.html`)
+- Section 11: Global Animations
+- Section 12: Reduced Motion
 
 ## Branching Workflow
 
